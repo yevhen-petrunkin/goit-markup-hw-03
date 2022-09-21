@@ -18,16 +18,26 @@ body {
   background-color: var(--white-color);
   color: var(--primary-black-color);
   font-family: var(--roboto);
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
 }
 
 .section {
-  letter-spacing: 0.03em;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -37,6 +47,7 @@ body {
 
 .container {
   width: 1200px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,7 +65,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .logo > span {
@@ -63,7 +73,8 @@ body {
 
 .nav .link,
 .nav-links .link {
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -112,18 +123,18 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--grey-color);
-  color: var(--white-color);
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
-.hero h1 {
+.hero-heading {
   margin: 0 auto 30px;
   max-width: 696px;
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero button {
@@ -145,7 +156,7 @@ body {
 /* Features */
 
 .content h2 {
-  margin: 0 0 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -161,7 +172,6 @@ body {
 }
 
 .features h3 {
-  margin: 0;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -170,7 +180,6 @@ body {
 }
 
 .features p {
-  margin: 0;
   color: var(--secondary-grey-color);
   font-size: 14px;
   line-height: 1.71;
@@ -179,8 +188,6 @@ body {
 .features-list,
 .activities-list,
 .team-list {
-  padding-left: 0;
-  margin: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -204,25 +211,24 @@ body {
 }
 
 .team-list li {
-  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-list img {
-  margin-bottom: 30px;
+.team-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team h3 {
-  margin: 0 0 10px;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
 }
 
 .team p {
-  margin: 0;
   color: var(--secondary-grey-color);
 }
 
@@ -290,23 +296,20 @@ body {
 }
 
 .project-list li {
-  padding: 0 0 20px;
-  border-bottom: 1px solid #eeeeee;
   flex-basis: calc((100% - 60px) / 3);
 }
 
 .project-list img {
-  margin: 0 0 20px;
   display: block;
 }
 
 .project-list h2 {
-  margin: 0 0 4px 24px;
+  margin-bottom: 4px;
 }
 
-.project-list p {
-  margin: 0;
-  margin-left: 24px;
+.project {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 /* Footer */
@@ -318,13 +321,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.page-footer .logo {
-  padding: 0;
-  margin-right: 0;
+.footer-logo {
   margin-bottom: 20px;
+  display: block;
+  color: var(--blue-color);
+  font-family: var(--raleway);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
-span.footer-logo,
+.footer-logo > span,
 .contact:hover,
 .contact:focus {
   color: var(--white-color);
